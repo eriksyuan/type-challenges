@@ -1,0 +1,8 @@
+{
+    "buildOptions": {},
+    "compilerOptions": {
+        "types": [
+            "challenges/**/template.ts"
+        ]
+    }
+}
