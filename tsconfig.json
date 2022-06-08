@@ -1,6 +1,9 @@
 {
     "buildOptions": {},
     "compilerOptions": {
+        "lib": [
+            "ESNext",
+        ],
         "types": [
             "challenges/**/template.ts"
         ]
