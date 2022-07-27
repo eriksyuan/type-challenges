@@ -1,6 +1,4 @@
-declare function PromiseAll<T extends any[] = []>(
-  // * [...T]
-  values: readonly [...T]
-): Promise<{
-  [P in keyof T]: T[P] extends Promise<infer R> ? R : T[P];
-}>;
+// todo mark
+declare function PromiseAll<V extends any[] = []>(v: readonly [...V]): Promise<{
+  [P in keyof V]: V[P] extends Promise<infer R> ? R : V[P]
+}>

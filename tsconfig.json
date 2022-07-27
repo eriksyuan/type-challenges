@@ -1,11 +1,6 @@
 {
-    "buildOptions": {},
+    "extends": "./tsconfig.base.json",
     "compilerOptions": {
-        "lib": [
-            "ESNext",
-        ],
-        "types": [
-            "challenges/**/template.ts"
-        ]
+        "module": "commonjs"
     }
 }

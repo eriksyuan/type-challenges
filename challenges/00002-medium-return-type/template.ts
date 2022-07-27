@@ -1,5 +1,1 @@
-type MyReturnType<T extends (...args: any[]) => unknown> = T extends (
-  ...args: any[]
-) => infer Return
-  ? Return
-  : never;
+type MyReturnType<T> = T extends (...args: any[]) => infer Return ? Return : unknown 

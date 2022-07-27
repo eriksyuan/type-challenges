@@ -27,9 +27,5 @@ type uPcase = {
   z: "Z";
 };
 
-type MyCapitalize<T extends string> = T extends `${infer first}${infer rest}`
-  ? first extends keyof uPcase
-    ? `${uPcase[first]}${rest}`
-    : T
-  : T;
+type MyCapitalize<T extends string> = T extends `${infer first}${infer rest}` ? first extends keyof uPcase ? `${uPcase[first]}${rest}` : T : T
 

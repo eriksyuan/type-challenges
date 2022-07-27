@@ -27,6 +27,8 @@ type X = {
   };
 };
 
+type f =DeepReadonly<X>
+
 type Expected = {
   readonly a: () => 22;
   readonly b: string;

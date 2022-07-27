@@ -1,8 +1,5 @@
-type MyParameters<T extends (...args: any[]) => any> = T extends (
-  ...args: infer U
-) => any
-  ? U
+type MyParameters<P extends (...args: any[]) => unknown> = P extends (
+  ...args: infer P
+) => unknown
+  ? [...P]
   : never;
-
-
-// !注意  infer在函数入参中的写法
